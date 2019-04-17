@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<HTML>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Twitter and celebrirty endorsements</h1>
+        </div>
+        <div class="container">
+            <a class="button-container" id='map' href="{% url 'index' %}"><button>Overview Map</button></a>
+            <a class="button-container" id='sentiment' href="{% url 'index' %}"><button>In depth analysis</button></a>
+        </div>
+    </body>
+
+    <style>
+        body
+        {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .container {
+            display: flex; 
+            width: 100%;
+            justify-content: center;
+            padding : 5%;
+            border : 5%;
+        }
+            
+        button {
+            background: #99A3FF;
+            color: white;
+            border: 0;
+            padding: 6px 12px;
+            border-radius: 2px;
+        }
+            
+        .button-container {
+            padding: 12px 24px;
+        }
+            
+        .button-container:not(:last-child) {
+            border-right: 1px solid #ddd;
+        }
+    </style>
+</HTML>
