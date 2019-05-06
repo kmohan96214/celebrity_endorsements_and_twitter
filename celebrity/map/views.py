@@ -3,7 +3,7 @@ from django.http import JsonResponse,HttpResponseRedirect
 from . import helpers
 from django.urls import reverse
 # Create your views here.
-GMAP_API_KEY = 'AIzaSyAQhPH9EijO6ENbBIDsYyuclePHJjeO6K4'
+GMAP_API_KEY = 'YOUR GMAP API KEY HERE'
 
 def home(request):
     return render(request,'home.html')
